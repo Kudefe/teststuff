@@ -1,0 +1,89 @@
+html, body {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+  background-image: url("/images/mario.gif"), url("/images/ground.png"), url("/images/bushes.png"), url("/images/back.png");
+  background-color: #F8E0B0;
+  background-repeat: no-repeat, repeat-x, repeat-x, repeat-x;
+  background-position: left 30% bottom 24px, left 0px bottom 0px, left 0px bottom 24px, left 0px bottom 0px;
+  -webkit-animation: back 15s infinite linear;
+          animation: back 15s infinite linear;
+}
+
+@-webkit-keyframes back {
+  0% {
+    background-position: left 30% bottom 24px, left 0px bottom 0px, left 0px bottom 24px, left 0px bottom 0px;
+  }
+  50% {
+    background-position: left 50% bottom 24px, left -816px bottom 0px, left -508px bottom 24px, left -256px bottom 0px;
+  }
+  100% {
+    background-position: left 30% bottom 24px, left -1632px bottom 0px, left -1016px bottom 24px, left -512px bottom 0px;
+  }
+}
+
+@keyframes back {
+  0% {
+    background-position: left 30% bottom 24px, left 0px bottom 0px, left 0px bottom 24px, left 0px bottom 0px;
+  }
+  50% {
+    background-position: left 50% bottom 24px, left -816px bottom 0px, left -508px bottom 24px, left -256px bottom 0px;
+  }
+  100% {
+    background-position: left 30% bottom 24px, left -1632px bottom 0px, left -1016px bottom 24px, left -512px bottom 0px;
+  }
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 1px 4px #000;
+    margin-top: 20px;
+}
+
+#box {
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    top: 45%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    text-align: center;
+}
+
+
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100vh;
+  height: 100vh;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+
+
+p {  
+    color:lightgrey;
+    width: 80%
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+/* .1 {
+  width:100%;
+  height:100%;
+} */
+
+/* webkit solution */
+::-webkit-input-placeholder { text-align:left; }
+/* mozilla solution */
+input:-moz-placeholder { text-align:left; }
