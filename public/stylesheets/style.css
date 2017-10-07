@@ -61,9 +61,11 @@ form {
 
 .description {
   font-size: 16.5px;
+  font-weight: 550;
   letter-spacing: 1px;
   line-height: 1.3em;
   margin: -2px 0 45px;
+  text-align: center;
 }
 
 
